@@ -1508,7 +1508,6 @@ header .logo a img {
 }
 
 .intro-info {
-	margin-top: 4.2rem;
 	margin-right: -30px;
 	margin-left: -30px;
 }
@@ -1518,10 +1517,6 @@ header .logo a img {
 	border-radius: 50%;
 	margin: .9rem 0 0 0;
 	float: left;
-}
-.intro-info .lead {
-	text-align: left;
-	padding-left: 13rem;
 }
 
 .about-content {
