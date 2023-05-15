@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'user@website.com';
+$siteOwnersEmail = 'haiderdev1999@gmail.com';
 
 
 if($_POST) {
@@ -49,9 +49,9 @@ if($_POST) {
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-		if ($mail) { echo "OK"; }
+		if ($mail) { echo "Email has been sent successfully!"; }
       else { echo "Something went wrong. Please try again."; }
-		
+
 	} # end if - no validation error
 
 	else {
@@ -59,7 +59,7 @@ if($_POST) {
 		$response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
 		$response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
 		$response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
-		
+
 		echo $response;
 
 	} # end if - there was a validation error

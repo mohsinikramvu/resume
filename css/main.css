@@ -1,5 +1,5 @@
 /**
- * =================================================================== 
+ * ===================================================================
  *
  *  Kards v1.0 Main Stylesheet
  *  url: styleshout.com
@@ -11,7 +11,7 @@
  *  03. typography & general theme styles
  *  04. preloader
  *  05. forms
- *  06. buttons 
+ *  06. buttons
  *  07. other components
  *  08. common styles
  *  09. header styles
@@ -25,26 +25,26 @@
  *  17. contact
  *  18. footer
  *
- * =================================================================== 
+ * ===================================================================
  */
 
 
-/** 
+/**
  * ===================================================================
  * 01. webfonts and iconfonts - (_document-setup.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 
 
-/** 
+/**
  * ===================================================================
  * 02. base style overrides - (_document-setup.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 html {
 	font-size: 10px;
@@ -94,24 +94,25 @@ a:hover, a:focus, a:active {
 	outline: 0;
 }
 
-/** 
+/**
  * ===================================================================
  * 03. typography & general theme styles - (_document-setup.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-	font-family: "poppins-semibold", sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: #1f1e2e;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
 	margin-bottom: 2.1rem;
+	font-weight: 600;
 }
 h3, .h03, h4, .h04 {
 	margin-bottom: 1.8rem;
 }
 h5, .h05, h6, .h06 {
-	font-family: "poppins-bold";
+	font-family: "Poppins", sans-serif;
 	margin-bottom: 1.2rem;
 }
 h1, .h01 {
@@ -126,7 +127,7 @@ h1, .h01 {
 	}
 }
 h2, .h02 {
-	font-size: 2.4rem;
+	font-size: 2.6rem;
 	line-height: 1.25;
 }
 h3, .h03 {
@@ -134,11 +135,11 @@ h3, .h03 {
 	line-height: 1.5;
 }
 h4, .h04 {
-	font-size: 1.7rem;
+	font-size: 2rem;
 	line-height: 1.765;
 }
 h5, .h05 {
-	font-size: 1.4rem;
+	font-size: 2rem;
 	line-height: 1.714;
 	text-transform: uppercase;
 	letter-spacing: .15rem;
@@ -153,8 +154,8 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
-	font-size: 2rem;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
 	line-height: 1.8;
 	color: #888888;
 }
@@ -268,7 +269,7 @@ hr {
 }
 
 /**
- * Lists - (_document-setup.scss)  
+ * Lists - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 ol {
@@ -316,7 +317,7 @@ dd {
 }
 
 /**
- * tables - (_document-setup.scss)  
+ * tables - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 table {
@@ -349,7 +350,7 @@ th:last-child, td:last-child {
 }
 
 /**
- * Spacing - (_document-setup.scss)  
+ * Spacing - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 button, .button {
@@ -376,7 +377,7 @@ form,
 }
 
 /**
- * floated image - (_document-setup.scss)  
+ * floated image - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 img.pull-right {
@@ -387,7 +388,7 @@ img.pull-left {
 }
 
 /**
- * block grid paddings - (_document-setup.scss) 
+ * block grid paddings - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 .bgrid {
@@ -438,11 +439,11 @@ img.pull-left {
 	height: 6px;
 }
 
-/** 
+/**
  * ===================================================================
  * 04. preloader - (_preloader-1.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #preloader {
 	position: fixed;
@@ -501,11 +502,11 @@ img.pull-left {
 	}
 }
 
-/** 
+/**
  * ===================================================================
  * 05. forms - (_forms.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 fieldset {
 	border: none;
@@ -526,8 +527,9 @@ select {
 	outline: none;
 	vertical-align: middle;
 	color: #1f1e2e;
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.5rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
 	line-height: 3rem;
 	max-width: 100%;
 	background: transparent;
@@ -620,7 +622,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 }
 
 /**
- * Style Placeholder Text  
+ * Style Placeholder Text
  * -
  */
 ::-webkit-input-placeholder {
@@ -639,11 +641,11 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	color: #a1a1a1 !important;
 }
 
-/** 
+/**
  * ===================================================================
  * 06. buttons - (_button-essentials.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .button,
 a.button,
@@ -652,10 +654,11 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	display: inline-block;
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.4rem;
-	text-transform: uppercase;
-	letter-spacing: .3rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-size: 1.7rem;
+	text-transform: capitalize;
+	letter-spacing: 0;
 	height: 5.4rem;
 	line-height: 5.4rem;
 	padding: 0 3rem;
@@ -746,11 +749,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 07. other components - (_others.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 
 /**
@@ -794,7 +797,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 
 /**
- * drop cap 
+ * drop cap
  */
 .drop-cap:first-letter {
 	float: left;
@@ -849,7 +852,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: counter(definitions, decimal) ". ";
 }
 
-/** 
+/**
  * Pull Quotes
  * -----------
  * markup:
@@ -860,7 +863,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *		</blockquote>
  *	</aside>
  *
- * --------------------------------------------------------------------- 
+ * ---------------------------------------------------------------------
  */
 .pull-quote {
 	position: relative;
@@ -890,7 +893,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: none;
 }
 
-/** 
+/**
  * Stats Tab
  * ---------
  * markup:
@@ -956,12 +959,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: absolute;
 	left: 0;
 	top: -3rem;
-	font-family: "poppins-bold", sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: #1f1e2e;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	font-size: 1.5rem;
-	line-height: 2.4rem;
+	text-transform: capitalize;
+	font-size: 2rem;
+    line-height: 2.2rem;
+	font-weight: 700;
 }
 .skill-bars li .progress {
 	background: #1f1e2e;
@@ -973,9 +976,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	right: 0;
 	top: -3.6rem;
 	display: block;
-	font-family: "poppins-regular", sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: white;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	line-height: 1;
 	background: #1f1e2e;
 	padding: .6rem .6rem;
@@ -1014,17 +1017,17 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li .percent100 { width: 100%; }
 
 
-/** 
+/**
  * ===================================================================
  * 08. common styles (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .grey-section {
 	background: #ebebeb;
 }
 .grey-section p.lead {
-	color: #7d7d7d;
+	color: #ffffff;
 }
 .section-intro {
 	max-width: 700px;
@@ -1035,7 +1038,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 }
 .section-intro h1 {
-	font-family: "poppins-semibold", serif;
 	font-size: 3.6rem;
 	color: #1f1e2e;
 	line-height: 1.25;
@@ -1043,16 +1045,17 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .section-intro h5 {
 	color: #FF0077;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
+	font-weight: 700;
 }
 
 /**
  * responsive:
  * common styles
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:768px) {
 	.section-intro {
@@ -1078,11 +1081,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 09. header styles - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 header {
 	position: fixed;
@@ -1122,14 +1125,14 @@ header .logo a {
 	/* background: url("../images/logo.png") no-repeat center; */
 	/* background-size: 92px 15px; */
 }
-header .logo a img { 
+header .logo a img {
 	width: 100%;
 	max-width: 120px;
 }
 
 /**
  * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .menu-toggle {
 	float: left;
@@ -1266,7 +1269,7 @@ header .logo a img {
 /**
  * responsive:
  * header styles
- * --------------------------------------------------------------- 
+ * ---------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	header .top-bar {
@@ -1290,11 +1293,11 @@ header .logo a img {
 }
 
 
-/** 
+/**
  * ===================================================================
- * 10. intro - (_layout.scss) 
+ * 10. intro - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #intro {
 	background: #151515 url(../images/bg-intro-min.JPG) no-repeat center center;
@@ -1350,7 +1353,7 @@ header .logo a img {
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position {
-	font-family: "lora-regular", serif;
+	font-family: "Poppins", sans-serif;
 	font-size: 1.7rem;
 	line-height: 2.4rem;
 	text-transform: uppercase;
@@ -1382,9 +1385,9 @@ header .logo a img {
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
 	margin-top: .6rem;
-	font-size: 1.3rem;
-	text-transform: uppercase;
-	letter-spacing: .25rem;
+	font-size: 1.7rem;
+	text-transform: capitalize;
+	letter-spacing: 0;
 	background: #cc005f;
 }
 .intro-content .button:focus {
@@ -1431,7 +1434,7 @@ header .logo a img {
 /**
  * responsive:
  * Intro
- * --------------------------------------------------------------- 
+ * ---------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
@@ -1492,11 +1495,11 @@ header .logo a img {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 11. about - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #about {
 	background: #FFFFFF;
@@ -1526,10 +1529,9 @@ header .logo a img {
 	margin-bottom: 3.6rem;
 }
 .about-content h3 {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 	text-transform: uppercase;
-	letter-spacing: .25rem;
+	font-weight: 700;
 }
 .about-content .info-list {
 	list-style: none;
@@ -1540,19 +1542,25 @@ header .logo a img {
 	margin-bottom: .6rem;
 }
 .about-content .info-list li strong {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: #1f1e2e;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	font-size: 1.5rem;
-	line-height: 3rem;
+	text-transform: capitalize;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight: 700;
 }
 .about-content .info-list li span {
 	display: block;
-	font-family: "poppins-regular", sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: #888888;
-	font-size: 1.5rem;
-	line-height: 1;
+	font-size: 1.6rem;
+    line-height: 3rem;
+}
+.about-content .info-list li span a {
+	color: #888888;
+}
+.about-content .info-list li span a:hover {
+	color: #cc005f;
 }
 .about-content .skill-bars {
 	margin-top: 6rem;
@@ -1584,7 +1592,7 @@ header .logo a img {
 /**
  * responsive:
  * about
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	.intro-info {
@@ -1631,11 +1639,11 @@ header .logo a img {
 	}
 }
 
-/** 
+/**
  * ===================================================================
  * 12. resume - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #resume {
 	background: #1f1e2e url(../images/bg.jpg) no-repeat center;
@@ -1731,7 +1739,7 @@ header .logo a img {
 	color: #fff;
 }
 #resume .timeline-header p {
-	font-family: "poppins-regular", sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-size: 1.6rem;
 	color: #ffffff;
 	z-index: 100;
@@ -1757,11 +1765,15 @@ header .logo a img {
 	left: 0;
 	bottom: 0;
 }
-
+#resume .timeline-content p {
+	font-size: 1.6rem;
+	font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
 /**
  * responsive:
  * resume
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	#resume .timeline-header {
@@ -1835,11 +1847,11 @@ header .logo a img {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 13. portfolio - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #portfolio {
 	background: #FFFFFF;
@@ -1922,7 +1934,7 @@ header .logo a img {
 /**
  * responsive:
  * portfolio
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	#portfolio .folio-title {
@@ -2020,7 +2032,7 @@ header .logo a img {
 
 /**
  * transition effect for modal popup - (_layout.scss)
- * ------------------------------------------------------------------ 
+ * ------------------------------------------------------------------
  */
 
 /* overlay at start */
@@ -2072,11 +2084,11 @@ header .logo a img {
 	transform: translateY(-100%);
 }
 
-/** 
+/**
  * ===================================================================
  * 14. call-to-action section - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #cta {
 	padding-top: 10.2rem;
@@ -2101,7 +2113,7 @@ header .logo a img {
 
 /**
  * section ads - (_layout.scss)
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .section-ads h2 {
 	position: relative;
@@ -2140,11 +2152,11 @@ header .logo a img {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 15. services - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 /*#services {*/
 /*	background: #1f1e2e url(../images/bg.jpg) no-repeat center;*/
@@ -2228,11 +2240,11 @@ header .logo a img {
 /*}*/
 
 
-/** 
+/**
  * ===================================================================
  * 16. stats - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #stats {
 	background: #990047;
@@ -2295,11 +2307,11 @@ header .logo a img {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 17. contact - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #contact {
 	background: #1f1e2e;
@@ -2352,14 +2364,15 @@ header .logo a img {
 	clear: both;
 }
 #contact form .form-field label {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.1rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 1.4rem;
 	line-height: 2.4rem;
 	position: absolute;
 	bottom: -1.2rem;
-	right: .6rem;
-	text-transform: uppercase;
-	letter-spacing: .1rem;
+	right: 0;
+	text-transform: capitalize;
+	letter-spacing: 0;
 	padding: 0 2rem;
 	margin: 0;
 	color: #FFFFFF;
@@ -2406,9 +2419,9 @@ header .logo a img {
 	color: #FFFFFF;
 }
 #contact button.submitform {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	display: block;
-	letter-spacing: .2rem;
+	letter-spacing: 0;
 	height: 6.6rem;
 	line-height: 6.6rem;
 	padding: 0 3rem;
@@ -2479,6 +2492,16 @@ header .logo a img {
 .contact-info h5 {
 	color: #FF0077;
 }
+.contact-info p {
+	color: #7d7d7d;
+	font-size: 1.6rem;
+	font-weight: 400;
+	font-family: "Poppins", sans-serif;
+}
+.contact-info p strong {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
 .contact-info p a {
 	color: #6e6e6e;
 }
@@ -2488,7 +2511,7 @@ header .logo a img {
 
 /**
  * loader animation - (_layout.scss)
- * --------------------------------------------------------------- 
+ * ---------------------------------------------------------------
  */
 .s-loader {
 	margin: 1.2rem auto 3rem;
@@ -2542,11 +2565,11 @@ header .logo a img {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 18. footer - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 footer {
 	padding-bottom: 3rem;
@@ -2583,6 +2606,10 @@ footer .footer-social li a {
 }
 footer .copyright span {
 	display: inline-block;
+	font-size: 1.6rem;
+	color: #7d7d7d;
+	font-weight: 400;
+	font-family: "Poppins", sans-serif;
 }
 footer .copyright span::after {
 	content: "|";
@@ -2619,7 +2646,7 @@ footer .copyright span:last-child::after {
 
 /**
  * go to top - (_layout.scss)
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #go-top {
 	position: fixed;
