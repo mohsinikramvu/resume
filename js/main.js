@@ -235,27 +235,29 @@
 
 		      },
 		      success: function(msg) {
-
 	            // Message was sent
-	            if (msg == 'OK') {
+	            if (msg) {
 	            	sLoader.fadeOut();
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
+	               $('#message-success').html("Thanks!, The form was submitted successfully.");
 	               $('#message-success').fadeIn();
+				   setTimeout(() => {
+					location.reload();
+				   }, 15000)
 	            }
 	            // There was an error
 	            else {
 	            	sLoader.fadeOut();
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
+					$('#message-warning').html("Oops! There was a problem submitting your form");
+					$('#message-warning').fadeIn();
 	            }
 
 		      },
-		      error: function() {
-
+		      error: function(error) {
 		      	sLoader.fadeOut();
 		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+				$('#message-warning').fadeIn();
 
 		      }
 
