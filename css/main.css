@@ -1102,13 +1102,15 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #fff;
-	min-width: 220px;
+	min-width: 200px;
 	min-height: 66px;
 	position: absolute;
 	left: 90px;
 	top: 0;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+    padding: 0 15px;
 }
 header .logo {
 	float: left;
@@ -1140,7 +1142,7 @@ header .logo a img {
 	float: left;
 	width: 40px;
 	height: 40px;
-	margin-left: 20px;
+	margin-left: 0;
 	display: block;
 	position: relative;
 }
@@ -1286,6 +1288,7 @@ header .logo a img {
 @media only screen and (max-width:600px) {
 	header .top-bar {
 		left: 35px;
+		min-width: 200px;
 	}
 }
 @media only screen and (max-width:400px) {
@@ -1321,7 +1324,7 @@ header .logo a img {
 	width: 100%;
 	height: 100%;
 	background: #111111;
-	opacity: .65;
+	opacity: .5;
 }
 
 .intro-content {
@@ -1476,7 +1479,8 @@ header .logo a img {
 		background-position-x: 75%;
 	}
 	.intro-overlay {
-		opacity: 0.8;
+		opacity: 1;
+		background: #11111191;
 	}
 	.intro-content h1 {
 		font-size: 4.6rem;
