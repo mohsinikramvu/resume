@@ -177,11 +177,11 @@
                         <strong>CSS</strong>
                     </li>
                     <li>
-                        <div class="progress percent75"><span>75%</span></div>
+                        <div class="progress percent80"><span>80%</span></div>
                         <strong>JavaScript</strong>
                     </li>
                     <li>
-                        <div class="progress percent70"><span>70%</span></div>
+                        <div class="progress percent85"><span>85%</span></div>
                         <strong>WordPress</strong>
                     </li>
                     <li>
@@ -189,15 +189,15 @@
                         <strong>Git</strong>
                     </li>
                     <li>
-                        <div class="progress percent75"><span>75%</span></div>
+                        <div class="progress percent85"><span>85%</span></div>
                         <strong>CMS Libraries</strong>
                     </li>
                     <li>
-                        <div class="progress percent85"><span>85%</span></div>
+                        <div class="progress percent90"><span>90%</span></div>
                         <strong>ReactJS</strong>
                     </li>
                     <li>
-                        <div class="progress percent85"><span>85%</span></div>
+                        <div class="progress percent90"><span>90%</span></div>
                         <strong>NextJS</strong>
                     </li>
                     <li>
@@ -213,7 +213,7 @@
                         <strong>AngularJS</strong>
                     </li>
                     <li>
-                        <div class="progress percent75"><span>75%</span></div>
+                        <div class="progress percent80"><span>80%</span></div>
                         <strong>SvelteJS</strong>
                     </li>
                     <li>
@@ -243,13 +243,13 @@
 
         </div>
 
-        <div class="row button-section">
+        <!-- <div class="row button-section">
             <div class="col-twelve">
                 <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
                 <button onclick="handleDownloadCV()" title="Download CV" class="button button-primary">Download
                     CV</button>
             </div>
-        </div>
+        </div> -->
 
     </section> <!-- /process-->
 
@@ -444,10 +444,13 @@
                     <div id="filters" class="button-group">
                         <button class="portfolio-button is-checked" data-filter="*">show all</button>
                         <button class="portfolio-button" data-filter=".react">ReactJS</button>
+                        <button class="portfolio-button" data-filter=".redux">Redux</button>
                         <button class="portfolio-button" data-filter=".nextjs">NextJS</button>
                         <button class="portfolio-button" data-filter=".angular">Angular</button>
-                        <button class="portfolio-button" data-filter=".gatsby, .alkaline-earth">GatsbyJS</button>
+                        <button class="portfolio-button" data-filter=".pwa">PWA</button>
                         <button class="portfolio-button" data-filter=".cms">CMS Frameworks</button>
+                        <button class="portfolio-button" data-filter=".tailwindcss">Tailwind CSS</button>
+                        <button class="portfolio-button" data-filter=".bootstrap">Bootstrap</button>
                         <button class="portfolio-button" data-filter=".laravel">Laravel</button>
                         <button class="portfolio-button" data-filter=".shopify">Shopify</button>
                         <button class="portfolio-button" data-filter=".wordPress">WordPress</button>
@@ -458,9 +461,42 @@
 
             <div class="row">
                 <div class="col-twelve elements-wrapper">
-                    <div class="element-item portfolio-item react nextjs shopify">
+                    <!-- <div class="element-item portfolio-item nextjs redux tailwindcss">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/nextjs/forthem.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/nextjs/doneeasy.png" class="img-fluid" alt="doneeasy picture" />
+                        <div class="portfolio-info">
+                            <h5>Done Easy</h5>
+                            <p>Done Easy - Unlock the Future of Business Commerce with DoneEasy!</p>
+                            <a href="https://doneeasy.io/" title="Done Easy" class="details-link" target="_blank">
+                                <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                    </div> -->
+                    <div class="element-item portfolio-item react redux">
+                        <div class="overlay-item"></div>
+                        <img src="images/portfolio/react/stellasource.png" class="img-fluid" alt="stellasource picture" />
+                        <div class="portfolio-info">
+                            <h5>Stella Source</h5>
+                            <p>Stella Source - Enhanced geometry-based quoting platform using React and Redux for efficient state management.</p>
+                            <a href="https://www.stellasource.com/" title="Stella Source" class="details-link" target="_blank">
+                                <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element-item portfolio-item angular pwa tailwindcss">
+                        <div class="overlay-item"></div>
+                        <img src="images/portfolio/angular/precisebuilder.png" class="img-fluid" alt="precise builder picture" />
+                        <div class="portfolio-info">
+                            <h5>Precise Builder</h5>
+                            <p>Precise Builder - Built and launched a scalable PWA with Angular and RXJS, enhancing mobile project management.</p>
+                            <a href="https://www.precisebuilder.com/" title="Precise Builder" class="details-link" target="_blank">
+                                <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element-item portfolio-item nextjs shopify">
+                        <div class="overlay-item"></div>
+                        <img src="images/portfolio/nextjs/forthem.png" class="img-fluid" alt="forthem picture" />
                         <div class="portfolio-info">
                             <h5>ForThem</h5>
                             <p>E-commerce Store Empowering individuality.</p>
@@ -469,9 +505,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="element-item portfolio-item react gatsby cms">
+                    <div class="element-item portfolio-item nextjs cms tailwindcss">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/gatsbyjs/rat.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/gatsbyjs/rat.png" class="img-fluid" alt="reedartdepartment picture" />
                         <div class="portfolio-info">
                             <h5>Reed Art Department</h5>
                             <p>It's a cutting-edge creative agency specializing in art and design solutions.</p>
@@ -480,9 +516,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="element-item portfolio-item react nextjs cms">
+                    <div class="element-item portfolio-item react cms tailwindcss">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/react/misla.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/react/misla.png" class="img-fluid" alt="misla" />
                         <div class="portfolio-info">
                             <h5>MISLA</h5>
                             <p>MISLA | Made In South Los Angeles.</p>
@@ -491,9 +527,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="element-item portfolio-item angular cms">
+                    <div class="element-item portfolio-item angular cms bootstrap">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/angular/tttm.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/angular/tttm.png" class="img-fluid" alt="tttm picture" />
                         <div class="portfolio-info">
                             <h5>Talk Tech To Me</h5>
                             <p>Delivers the latest insights, trends, and discussions in the tech world.</p>
@@ -502,9 +538,9 @@
                             </a>
                         </div>
                     </div>                    
-                    <div class="element-item portfolio-item laravel react">
+                    <div class="element-item portfolio-item laravel react bootstrap">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/laravel/streamline.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/laravel/streamline.png" class="img-fluid" alt="streamline picture" />
                         <div class="portfolio-info">
                             <h5>Streamline Inspection</h5>
                             <p>Streamline Inspection is a growing and dynamic company.</p>
@@ -513,9 +549,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="element-item portfolio-item html">
+                    <div class="element-item portfolio-item html bootstrap">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/html/obplogistics.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/html/obplogistics.png" class="img-fluid" alt="obplogistics picture" />
                         <div class="portfolio-info">
                             <h5>OBPLogistics</h5>
                             <p>A food delivery service provider.</p>
@@ -526,7 +562,7 @@
                     </div>
                     <div class="element-item portfolio-item html">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/html/hotandcool.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/html/hotandcool.png" class="img-fluid" alt="hotandcool picture" />
                         <div class="portfolio-info">
                             <h5>Hot and Cool</h5>
                             <p>Giving our seniors a taste of Hot & Cool.</p>
@@ -535,9 +571,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="element-item portfolio-item html">
+                    <div class="element-item portfolio-item html bootstrap">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/html/bbttc.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/html/bbttc.png" class="img-fluid" alt="bbttc picture" />
                         <div class="portfolio-info">
                             <h5>Best Buy Teen Tech Center</h5>
                             <p>Where Innovation Meets Opportunity.</p>
@@ -546,9 +582,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="element-item portfolio-item react nextjs shopify">
+                    <div class="element-item portfolio-item react nextjs shopify tailwindcss">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/nextjs/opascope.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/nextjs/opascope.png" class="img-fluid" alt="opascope picture" />
                         <div class="portfolio-info">
                             <h5>Opascope</h5>
                             <p>A platform that specializes in providing high-quality optics and telescopes for astronomy enthusiasts.</p>
@@ -559,7 +595,7 @@
                     </div>
                     <div class="element-item portfolio-item wordPress">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/wordpress/allpeoples.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/wordpress/allpeoples.png" class="img-fluid" alt="all peoples picture" />
                         <div class="portfolio-info">
                             <h5>All Peoples</h5>
                             <p>Empowering People, Enriching Community.</p>
@@ -568,9 +604,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="element-item portfolio-item html">
+                    <div class="element-item portfolio-item html bootstrap">
                         <div class="overlay-item"></div>
-                        <img src="images/portfolio/html/bwit.png" class="img-fluid" alt="" />
+                        <img src="images/portfolio/html/bwit.png" class="img-fluid" alt="black women in tech picture" />
                         <div class="portfolio-info">
                             <h5>Black Women In Tech</h5>
                             <p>Encouraging Black Women & Women of Color in Tech Careers.</p>
