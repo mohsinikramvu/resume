@@ -3249,9 +3249,8 @@ footer .copyright span:last-child::after {
 
 .element-item {
 	position: relative;
-	width: 30%;
+	width: calc(33% - 20px);
 	height: 300px;
-	margin: 10px;
 	background: #c3d8df;
 	overflow: hidden;
 }
@@ -3262,13 +3261,14 @@ footer .copyright span:last-child::after {
 }
 
 
-
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio-item {
 	position: relative;
 	overflow: hidden;
+	margin: 10px;
+	border-radius: 20px;
 }
 
 .portfolio-item img {
@@ -3360,4 +3360,18 @@ footer .copyright span:last-child::after {
 .portfolio-item:hover .portfolio-info {
 	opacity: 1;
 	bottom: 0;
+}
+
+@media (min-width: 575px) and (max-width: 1200px) {
+	.element-item {
+		width: calc(50% - 20px);
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.element-item {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+	}
 }
